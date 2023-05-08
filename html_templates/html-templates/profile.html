@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <nav class="main-nav">
+          <a href="#">
+            <div class="logo deactivate">Feel Right</div>
+          </a>
+          <div class="navigation">
+            <button class="btn white home">Home</button>
+            <button class="btn white profile selected">Profile</button>
+            <button class="btn white predict">Predict</button>
+            <button class="btn white history">History</button>
+            <button class="btn gray sign-out">Sign Out</button>
+          </div>
+        </nav>
+
+        <!-- End of DESKTOP Nav -->
+
+        <nav class="mobile-nav">
+          <div class="logo">Feel Right</div>
+          <div class="menu-icon" id="menu-icon"></div>
+        </nav>
+
+        <div class="mobile-menu-container" id="mobile-menu-container">
+          <div class="close-icon" id="close-icon"></div>
+          <div class="mobile-menu">
+            <button class="btn white home">Home</button>
+            <button class="btn white profile selected">Profile</button>
+            <button class="btn white predict">Predict</button>
+            <button class="btn white history">History</button>
+            <button class="btn gray sign-out">Sign Out</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- End of HEADER -->
+
+    <div class="input-section">
+      <div class="wrapper">
+        <div class="input-data">
+          <h2>Profile Info</h2>
+
+          <div class="input-form-wrapper profile">
+            <form class="data">
+              <div class="input-form-item">
+                <label for="item-1" class="input-label">Username</label>
+                <i class="lock-icon"></i>
+                <input type="text" id="item-1" name="item-1" placeholder="example_user" disabled />
+              </div>
+              <div class="input-form-item">
+                <label for="item-2" class="input-label">Date of Birth</label>
+                <i class="lock-icon"></i>
+                <input type="text" id="item-2" name="item-2" placeholder="11/1/1990" disabled />
+              </div>
+              <div class="input-form-item">
+                <label for="item-3" class="input-label">Biological Gender</label>
+                <i class="lock-icon"></i>
+                <input type="text" id="item-3" name="item-3" placeholder="male" disabled />
+              </div>
+              <div class="input-form-item">
+                <label for="item-4" class="input-label">Activity Levels</label>
+                <i class="info-icon"></i>
+                <input type="text" id="item-4" name="item-4" placeholder="high" />
+              </div>
+              <div class="input-form-item">
+                <label for="item-5" class="input-label">Fat Percentage</label>
+                <i class="info-icon"></i>
+                <input type="text" id="item-5" name="item-5" placeholder="&lt;15%" />
+              </div>
+              <button class="input-form-item btn green">Submit Changes</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End of HERO -->
+
+    <footer>
+      <ul>
+        <li><a href="#">Home</a>&nbsp;|&nbsp;</li>
+        <li><a href="#">About Us</a>&nbsp;|&nbsp;</li>
+        <li><a href="#">Terms</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
