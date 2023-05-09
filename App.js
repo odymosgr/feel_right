@@ -1,16 +1,17 @@
-import React from "react"
-import { StyleSheet, Text, View } from "react-native"
+import React, { useState, useEffect } from "react"
+import { Dimensions } from "react-native"
 import HomeLoggedOut from "./screens/HomeLoggedOut"
 
 export default function App() {
-  return <HomeLoggedOut />
-}
+  const [windowWidth, setWindowWidth] = useState(Dimensions.get("window").width)
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center"
-  }
-})
+  useEffect(() => {
+    const updateWidth = () => {
+      setWindowWidth(Dimensions.get("window").width)
+    }
+    Dimensions.addEventListener("change", updateWidth)
+    return () => Dimensions.removeEventListener("change", updateWidth)
+  }, [])
+
+  return <HomeLoggedOut windowWidth={windowWidth} />
+}

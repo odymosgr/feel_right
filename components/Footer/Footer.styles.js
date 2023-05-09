@@ -1,15 +1,28 @@
 import { StyleSheet } from "react-native"
+import COLORS from "../../constants/styles/colors.js"
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#F5FCFF"
-  },
-  footer: {
+  largeFooter: {
     height: "50px",
-    backgroundColor: "#1e1e1e",
+    backgroundColor: COLORS.veryDarkGrayColor,
+    borderTopColor: "#000",
+    borderTopWidth: "1px",
+    boxSizing: "border-box",
+    display: "block",
+    fontFamily: '"Helvetica", "Arial", sans-serif'
+  },
+  mediumFooter: {
+    height: "50px",
+    backgroundColor: "#fff",
+    borderTopColor: "#000",
+    borderTopWidth: "1px",
+    boxSizing: "border-box",
+    display: "block",
+    fontFamily: '"Helvetica", "Arial", sans-serif'
+  },
+  smallFooter: {
+    height: "50px",
+    backgroundColor: COLORS.darkGrayColor,
     borderTopColor: "#000",
     borderTopWidth: "1px",
     boxSizing: "border-box",
