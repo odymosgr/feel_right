@@ -44,15 +44,15 @@ const Footer = props => {
 
   return (
     <View style={footerStyle}>
-      <View style={styles.ul}>
-        <TouchableOpacity style={styles.li}>
-          <Text style={styles.a}>Home&nbsp;|&nbsp;</Text>
+      <View style={styles.footerUl}>
+        <TouchableOpacity style={styles.footerLi}>
+          <Text style={styles.footerA}>Home&nbsp;|&nbsp;</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.li}>
-          <Text style={styles.a}>About Us&nbsp;|&nbsp;</Text>
+        <TouchableOpacity style={styles.footerLi}>
+          <Text style={styles.footerA}>About Us&nbsp;|&nbsp;</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.li}>
-          <Text style={styles.a}>Terms</Text>
+        <TouchableOpacity style={styles.footerLi}>
+          <Text style={styles.footerA}>Terms</Text>
         </TouchableOpacity>
       </View>
     </View>
