@@ -6,9 +6,9 @@ const styles = StyleSheet.create({
   mediumHeroSection: { paddingTop: "94px", marginBottom: "50px", display: "block", fontFamily: '"Helvetica", "Arial", sans-serif' },
   smallHeroSection: { paddingTop: "10px", marginBottom: "50px", display: "block", fontFamily: '"Helvetica", "Arial", sans-serif' },
 
-  largeHeroWrapper: { marginVertical: "0", marginHorizontal: "auto", maxWidth: "1317px", height: "100%", display: "flex", justifyContent: "space-between" },
-  mediumHeroWrapper: { marginVertical: "0", marginHorizontal: "auto", height: "100%", display: "flex", maxWidth: "800px", flexDirection: "column", justifyContent: "space-around" },
-  smallHeroWrapper: { marginVertical: "0", marginHorizontal: "auto", display: "flex", justifyContent: "space-between", maxWidth: "360px", height: "780px" },
+  largeHeroWrapper: { marginVertical: "0", marginLeft: "auto", marginRight: "auto", maxWidth: "1317px", height: "100%", display: "flex", justifyContent: "space-between", flexDirection: "row" },
+  mediumHeroWrapper: { marginVertical: "0", marginLeft: "auto", marginRight: "auto", height: "100%", display: "flex", maxWidth: "800px", flexDirection: "column", justifyContent: "space-around" },
+  smallHeroWrapper: { marginVertical: "0", marginLeft: "auto", marginRight: "auto", display: "flex", justifyContent: "space-between", maxWidth: "360px", height: "780px" },
 
   largeHeroLeft: { display: "block" },
   mediumHeroLeft: { display: "block", textAlign: "center" },
